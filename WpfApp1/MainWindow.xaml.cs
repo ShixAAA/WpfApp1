@@ -35,9 +35,9 @@ namespace WpfApp1
                 double Resheniye = (3 * Math.Sin(x) + 6 * Math.Cos(y)) / 2;
                 Result2.Content = $"{Resheniye:###.###}";
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Вводить нужно только число!");
                 X.Text = null;
                 Y.Text = null;
             }
